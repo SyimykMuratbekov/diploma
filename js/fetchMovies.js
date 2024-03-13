@@ -50,37 +50,12 @@ class GetMovies {
               alt="${movie.nameRu || movie.nameOriginal || movie.nameEn}" />
           </div>
           <div class="movie-content">
-
             <div class="movie-info">
-
               <h2 class="movie-title">${movie.nameRu || movie.nameOriginal || movie.nameEn}</h2>
-
-              <div class="movie-items">
-
                 <div class="item">
                   <span>Год производства: ${movie.year}</span>
                 </div>
-                <div class="item">
-                  <span>Страна: ${movie.countries[0]}</span>
-                </div>
-                <div class="item">
-                  <span>Жанр:  ${movie.genres[0]}</span>
-                </div>
-                <div class="item">
-                  <span>Продолжительность:
-                    <small>97 <sup>мин</sup>. / 02:00</small></span>
-                </div>
-                <div class="item">
-                  <span>Премьера <b>(Кыргызстан)</b>:
-                    <small>2023-10-19</small></span>
-                </div>
               </div>
-            </div>
-            <!-- Кнопки карточки -->
-            <div class="movie-actions">
-              <a title="Смотреть трейлер" aria-label="Трейлер" target="_blank"
-                href="https://youtu.be/K3HJ0CMBTOk?si=5oEnc6p03UfUVNbL" class="movie-btn">Трейлер
-              </a>
             </div>
           </div>
        `
