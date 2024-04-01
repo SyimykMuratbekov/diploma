@@ -145,8 +145,26 @@ class GetMovies {
 						<img src="${movie.posterUrl || movie.posterUrlPreview}" 
 							alt="${movie.nameRu || movie.nameOriginal || movie.nameEn}"/>
 					</div>
-					<div class="content">
+					<div class="slider-content">
 						<h4>${movie.nameRu || movie.nameOriginal || movie.nameEn}</h4>
+						<div class="slider-columns">
+							<div class="slider-column">
+								<small>Страна:</small>
+								${movie.countries.map((country) => `<span>${country.country}</span>`)}
+							</div>
+							<div class="slider-column">
+								<small>Жанр:</small>
+								${movie.genres.map((genre) => `<span>${genre.genre}</span>`)}
+							</div>
+							<div class="slider-column">
+								<small>Год:</small>
+								<span>${movie.year}</span>
+							</div>
+							<div class="slider-column">
+								<small>Трейлер:</small>
+								<span>${movie.filmLength}</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
