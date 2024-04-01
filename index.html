@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./img/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Ыссык-Көл кинотеатыры</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -19,7 +19,7 @@
       <!-- LOGO -->
       <div class="logo">
         <div class="logo-img">
-          <img src="./img/logo.png" alt="logo-1" />
+          <img src="./assets/img/logo.png" alt="logo-1" />
         </div>
         <h1 class="logo-text">Вход</h1>
       </div>
@@ -29,9 +29,9 @@
       <div class="container">
         <!-- NAVIGATION -->
         <ul class="list">
-          <li><a href="/">Главная</a></li>
-          <li><a href="movies">Фильмы</a></li>
-          <li><a href="sessions">Сеансы</a></li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./movies.html">Фильмы</a></li>
+          <li><a href="./sessions.html">Сеансы</a></li>
           <li><a href="#">Афишы</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
@@ -39,154 +39,6 @@
     </nav>
   </header>
   <!-- END OF HEADER -->
-
-  <!-- <section class="slider-section">
-    <div class="container">
-      <div class="slider">
-        <div class="slider-main">
-          <div class="slide">
-            <div class="slide-image">
-              <img src="https://pluggedin.ru/images/upload/1711488731.jpeg" alt="" />
-            </div>
-            <div class="slider-content">
-              <div class="btn">
-                <button>
-                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131"
-                      stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </button>
-              </div>
-              <h4 class="slider-title">
-                <span>Годзилла и Конг</span> <small>2024</small>
-              </h4>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image">
-              <img
-                src="https://avatars.dzeninfra.ru/get-zen_doc/1246934/pub_5ad761ecc3321b26f520f0f9_5ad76280bcf1bc28caedd9bb/scale_1200"
-                alt="" />
-            </div>
-            <div class="slider-content">
-              <div class="btn">
-                <button>
-                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131"
-                      stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </button>
-              </div>
-              <h4 class="slider-title">
-                <span>Кунг-фу панда 4</span> <small>2024</small>
-              </h4>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image">
-              <img src="https://cinematica.kg/uploads/movies/63bca976-f56c-4933-8803-4cfc68ec8226.jpg" alt="" />
-            </div>
-            <div class="slider-content">
-              <div class="btn">
-                <button>
-                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131"
-                      stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </button>
-              </div>
-              <h4 class="slider-title">
-                <span>Бейиш-эненин таманында</span> <small>2024</small>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="slider-list">
-          <div class="slider-list--item">
-            <img src="https://kinospartak.ru/files/images/cache/Films/Films156806466/5e0678b4c0-1.png" alt="" />
-            <div class="movie-items">
-              <h5>Кунг-фу панда 4</h5>
-              <div class="item">
-                <span>Год производства: 2024 г</span>
-              </div>
-              <div class="item">
-                <span>Страна: США, Китай</span>
-              </div>
-              <div class="item">
-                <span>Жанр:Комедия/Приключения</span>
-              </div>
-              <div class="item">
-                <span>
-                  Продолжительность:
-                  <small>1час <sup>34мин</sup>/ 02:43</small>
-                </span>
-
-              </div>
-              <div class="item">
-                <span>Премьера <b>(Кыргызстан)</b>:
-                  <small>2024-03-29</small></span>
-              </div>
-            </div>
-          </div>
-          <div class="slider-list--item">
-            <img
-              src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/4/7/2/8368274/562245581097.jpg"
-              alt="" />
-            <div class="movie-items">
-              <h5>Годзилла и Конг: Новая империя </h5>
-              <div class="item">
-                <span>Год производства: 2024</span>
-              </div>
-              <div class="item">
-                <span>Страна: США</span>
-              </div>
-              <div class="item">
-                <span>Жанр: фантастика, боевик</span>
-              </div>
-              <div class="item">
-                <span>Продолжительность:
-                  <small>115<sup>мин</sup>/ 02:00</small></span>
-              </div>
-              <div class="item">
-                <span>Премьера <b>(Кыргызстан)</b>:
-                  <small>2023-04-13</small></span>
-              </div>
-            </div>
-          </div>
-          <div class="slider-list--item">
-            <img
-              src="https://ic.p24.app/unsafe/540x800/filters:quality(80)/cdn.p24.app/r/ps/ru/5e/5e6c9a44-bdd3-4c3f-b2d5-e49e6d51f2be/adb8f8ef-942a-4075-9497-5308b0d16e49.jpg"
-              alt="" />
-            <div class="list-content">
-              <h5>Бейиш-эненин таманында</h5>
-              <div class="movie-items">
-                <div class="item">
-                  <span>Год производства: 2024</span>
-                </div>
-                <div class="item">
-                  <span>Страна: Кыргызстан</span>
-                </div>
-                <div class="item">
-                  <span>Жанр:Драма</span>
-                </div>
-                <div class="item">
-                  <span>Продолжительность:
-                    <small>2час<sup> 17мин</sup>/ 02:00</small></span>
-                </div>
-                <div class="item">
-                  <span>Премьера <b>(Кыргызстан)</b>:
-                    <small>2023-10-19</small></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <section style="margin: 0;">
     <div class="container">
@@ -223,7 +75,7 @@
   <!-- Добавление JS -->
   <!-- <script src=" /js/app.js"> -->
 
-  <script src="./js/fetchMovies.js"></script>
+  <script src="./assets/js/fetchMovies.js"></script>
   <!-- <script src="/js/showMovies.js"></script> -->
   <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
@@ -249,7 +101,7 @@
       },
     })
   </script>
-  <script src="./js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
