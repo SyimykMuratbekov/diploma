@@ -4,10 +4,12 @@ class GetMovies {
 	apiUri = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS'
 	container
 	modalContainer
+	sliderContainer
 
-	constructor(container, modalContainer) {
+	constructor(container, modalContainer, sliderContainer) {
 		this.container = container
 		this.modalContainer = modalContainer
+		this.sliderContainer = sliderContainer
 	}
 
 	async fetchMovies() {
@@ -23,6 +25,7 @@ class GetMovies {
 				console.log(body)
 				// 
 				this.toHtml(body.films)
+				this.renderSlider(body.films)
 			}
 		} catch (error) {
 			console.log(error)
@@ -124,6 +127,31 @@ class GetMovies {
 				this.closeModal();
 			}
 		})
+	}
+
+	renderSlider(movies) {
+		movies.forEach((film, i) => {
+			// movieEl.innerHTML = this.html(film)
+			// movieEl.addEventListener('click', () => this.modal(film.filmId))
+			this.sliderContainer.innerHTML += this.sliderHtml(film)
+		})
+	}
+
+	sliderHtml(movie) {
+		const html = `
+			<div class="swiper-slide">
+				<div class="slide">
+					<div class="poster">
+						<img src="${movie.posterUrl || movie.posterUrlPreview}" 
+							alt="${movie.nameRu || movie.nameOriginal || movie.nameEn}"/>
+					</div>
+					<div class="content">
+						<h4>${movie.nameRu || movie.nameOriginal || movie.nameEn}</h4>
+					</div>
+				</div>
+			</div>
+		`
+		return html
 	}
 }
 

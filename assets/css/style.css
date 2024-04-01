@@ -109,7 +109,7 @@ h1 {
 /* END HEADER */
 
 /* SLIDER */
-.slide-section {
+/* .slide-section {
   overflow: hidden;
 }
 
@@ -220,7 +220,60 @@ h1 {
   width: 90px;
   height: 140px;
   object-fit: cover;
+} */
+
+/* NEW SLIDER WITH SWIPERJS */
+
+.slider-wrapp {
+  width: 100%;
+  overflow: hidden;
 }
+
+.swiper-slide {
+  border: 1px solid red;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: .5fr .8fr;
+  color: var(--white-color);
+  background: var(--black-color);
+}
+
+.content {
+  border: 1px solid red;
+
+}
+
+.poster {
+  position: relative;
+  padding-top: calc(100% * 160 / 130);
+}
+
+.poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.slide {
+  
+  border: 1px solid red;
+
+} */
 
 /* END OF SLIDER */
 
