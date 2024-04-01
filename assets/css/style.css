@@ -229,9 +229,7 @@ h1 {
   overflow: hidden;
 }
 
-.swiper-slide {
-  border: 1px solid red;
-}
+.swiper-slide {}
 
 .slide {
   display: grid;
