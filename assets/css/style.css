@@ -378,3 +378,26 @@ h1 {
 .modal__movie-site {
   color: #ffd80e
 }
+
+/* footer  */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* end footer */
