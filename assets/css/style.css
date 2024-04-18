@@ -130,10 +130,23 @@ h1 {
   padding: 0 12px;
 }
 
+@media screen and (max-width: 670px) {
+  .slider-content {
+    gap: 15px;
+  }
+}
+
 .slider-content h4 {
   font-size: 38px;
   font-weight: 700;
   line-height: 53px;
+}
+
+@media screen and (max-width: 670px) {
+  .slider-content h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .slider-column {
@@ -168,23 +181,6 @@ h1 {
   width: 100%;
   height: 100%;
 }
-
-/* 
-.swiper-pagination {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  z-index: 100;
-  justify-content: space-between;
-}
-
-.slide {
-  
-  border: 1px solid red;
-
-} */
 
 /* END OF SLIDER */
 
@@ -259,7 +255,20 @@ h1 {
   row-gap: 22px;
 }
 
-.movie {
+@media screen and (max-width:1024px) {
+  .movies {
+    grid-template-columns: repeat(3, calc(100% / 3 - 12px / 3 * (3 - 1)));
+    column-gap: 12px;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .movies {
+    grid-template-columns: repeat(2, calc(100% / 2 - 12px / 2 * (2 - 1)));
+  }
+}
+
+.movieEl {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -269,13 +278,21 @@ h1 {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 6px;
+  overflow: hidden;
 }
+
 
 .movie-poster {
   position: relative;
   padding-top: calc(100% * (160 / 130));
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media screen and (max-width:1024px) {
+  .movie-poster {
+    padding-top: calc(100% * (180 / 130));
+  }
 }
 
 .movie-content {

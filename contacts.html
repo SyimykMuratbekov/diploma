@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/contacts.css" />
   <title>Ыссык-Көл кинотеатыры</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -32,39 +32,28 @@
           <li><a href="./index.html">Главная</a></li>
           <li><a href="./movies.html">Афишы</a></li>
           <li><a href="./sessions.html">Сеансы</a></li>
-          <li><a href="#">О кинотеатре</a></li>
+          <li><a href="./about-the-cinema.html">О кинотеатре</a></li>
           <li><a href="./contacts.html">Контакты</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <!-- END OF HEADER -->
-
-  <section style="margin: 0;">
-    <div class="container">
-      <div class="slider-wrapp">
-        <div class="swiper">
-          <div class="swiper-wrapper" id="slider-container">
-
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1749.1945575204602!2d78.39257596441318!3d42.496168628996564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865b99b3ba5b43%3A0xbe79066c42794fbc!2z0KvRgdGL0Lot0JrTqdC7INC60LjQvdC-0YLQtdCw0YLRgNGL!5e0!3m2!1sen!2skg!4v1713417156269!5m2!1sen!2skg"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
-  </section>
-
-  <!-- MOVIEWS SECTION -->
-  <section class="rap">
-    <div class="container">
-      <!-- movies обший родитель -->
-      <div class="movies" id="container">
-      </div>
-    </div>
-
-
-    <!-- Add more movie blocks as needed -->
-  </section>
-  <!-- END OF MOVIEWS SECTION -->
+  </div>
+  <div class="info">
+    <h1>Ыссык-Көл кинотеатр</h1>
+    <p>Адрес: ул. Ж. Абдрахманова, 138, Каракол</p>
+    <p>Режим работы: 10:00-01:00</p>
+  </div>
+  <script src="./assets/js/contacts.js"></script>
 
   <!-- FOOTER -->
   <footer>
@@ -76,40 +65,7 @@
         использования</a>
     </p>
   </footer>
-  <!-- END OFFOOTER -->
-  <div class="modal"></div>
-
-  <!-- Добавление JS -->
-  <!-- <script src=" /js/app.js"> -->
-
-  <script src="./assets/js/fetchMovies.js"></script>
-  <!-- <script src="/js/showMovies.js"></script> -->
-  <script type="module">
-    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: { delay: 3000, },
-      speed: 1100,
-      effect: "creative",
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 0, -500],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
-      x
-    })
-  </script>
-  <script src="./assets/js/script.js"></script>
+  <!-- end footer -->
 
 </body>
 
