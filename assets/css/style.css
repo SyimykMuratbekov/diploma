@@ -57,6 +57,12 @@ h1 {
   padding-top: 20px;
 }
 
+@media (max-width: 640px) {
+  .header {
+    gap: 3px;
+  }
+}
+
 .header_top {
   position: relative;
   display: flex;
@@ -94,6 +100,12 @@ h1 {
 .logo-img {
   max-width: 120px;
   width: 100%;
+}
+
+@media (max-width: 940px) {
+  .logo-img {
+    max-width: 80px;
+  }
 }
 
 .logo-img img {
@@ -184,10 +196,6 @@ h1 {
 
 /* END OF SLIDER */
 
-/* NAVIGATION */
-.navigation {
-  background: var(--white-color);
-}
 
 .list {
   display: flex;
@@ -197,6 +205,18 @@ h1 {
   padding: 10px 0;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 640px) {
+  .list {
+    display: none;
+  }
+}
+
+.navigation {
+  background: var(--black-color);
+  padding: 20px 0;
+  min-height: 40px;
 }
 
 .navigation a {
@@ -233,6 +253,77 @@ h1 {
   transform-origin: right;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform .2s ease;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* list-style-type: none; */
+}
+
+.menu-list a {
+  color: var(--black-color);
+}
+
+.menu-btn {
+  position: relative;
+  display: none;
+  background: transparent;
+  border: none;
+  z-index: 100;
+}
+
+@media (max-width:640px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.menu-btn span {
+  width: 18px;
+  height: 2px;
+  background: var(--white-color);
+  transition: transform .2s ease;
+}
+
+.menu-btn.active span {
+  background: var(--black-color);
+}
+
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg);
+  margin-bottom: -4px;
+}
+
+.menu-btn.active span:nth-child(2) {
+  visibility: hidden;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -8px;
+}
+
 /* END OF NAVIGATION */
 
 /* MOVIES */
@@ -264,7 +355,9 @@ h1 {
 
 @media screen and (max-width:630px) {
   .movies {
-    grid-template-columns: repeat(2, calc(100% / 2 - 12px / 2 * (2 - 1)));
+    grid-template-columns: repeat(2, calc(100% / 2 - 8px / 2 * (2 - 1)));
+    column-gap: 8px;
+    border: 1px solid red;
   }
 }
 
@@ -284,7 +377,7 @@ h1 {
 
 .movie-poster {
   position: relative;
-  padding-top: calc(100% * (160 / 130));
+  padding-top: calc(100% * (160 / 110));
   border-radius: 5px;
   overflow: hidden;
 }
